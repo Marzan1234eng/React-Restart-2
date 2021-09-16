@@ -2,6 +2,14 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  let person = {
+    name: "Marzan Hossain",
+    work: "Web Developer"
+  }
+  let style = {
+    color:"red",
+    backgroundColor: "Yellow"
+  }
   return (
     <div className="App">
       <header className="App-header">
@@ -9,14 +17,8 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p style={style}>This is {person.name +". I am a "+person.work} </p>
+        <p>My First React Paragraph</p>
       </header>
     </div>
   );
